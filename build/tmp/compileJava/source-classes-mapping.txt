@@ -1,0 +1,26 @@
+co/com/saucelabs/userinterfaces/LoginPage.java
+ co.com.saucelabs.userinterfaces.LoginPage
+co/com/saucelabs/tasks/Checkout.java
+ co.com.saucelabs.tasks.Checkout
+co/com/saucelabs/tasks/Login.java
+ co.com.saucelabs.tasks.Login
+co/com/saucelabs/interactions/Select.java
+ co.com.saucelabs.interactions.Select
+co/com/saucelabs/exceptions/PurchaseIsNotCompleteException.java
+ co.com.saucelabs.exceptions.PurchaseIsNotCompleteException
+co/com/saucelabs/userinterfaces/ProductPage.java
+ co.com.saucelabs.userinterfaces.ProductPage
+co/com/saucelabs/userinterfaces/HomePage.java
+ co.com.saucelabs.userinterfaces.HomePage
+co/com/saucelabs/userinterfaces/CheckoutPage.java
+ co.com.saucelabs.userinterfaces.CheckoutPage
+co/com/saucelabs/tasks/AddProducts.java
+ co.com.saucelabs.tasks.AddProducts
+co/com/saucelabs/questions/Purchase.java
+ co.com.saucelabs.questions.Purchase
+co/com/saucelabs/userinterfaces/CheckoutCompletadoPage.java
+ co.com.saucelabs.userinterfaces.CheckoutCompletadoPage
+co/com/saucelabs/interactions/Open.java
+ co.com.saucelabs.interactions.Open
+co/com/saucelabs/tasks/AddProduct.java
+ co.com.saucelabs.tasks.AddProduct

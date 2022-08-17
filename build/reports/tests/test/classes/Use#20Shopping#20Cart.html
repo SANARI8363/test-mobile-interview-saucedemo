@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">28.131s</div>
+<div class="counter">8.505s</div>
 <p>duration</p>
 </div>
 </td>
@@ -74,14 +74,14 @@
 <h3 class="failures">Buying different products at SwagLabs</h3>
 <span class="code">
 <pre>net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class io.appium.java_client.AppiumDriver
-	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:146)
-	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:134)
-	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:104)
+	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:168)
+	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:156)
+	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:126)
 	at net.serenitybdd.core.webdriver.RemoteDriver.of(RemoteDriver.java:18)
-	at net.thucydides.core.webdriver.appium.AppiumConfiguration.getTargetPlatform(AppiumConfiguration.java:59)
-	at net.thucydides.core.webdriver.ElementLocatorFactorySelector.platformFor(ElementLocatorFactorySelector.java:52)
-	at net.thucydides.core.webdriver.ElementLocatorFactorySelector.getLocatorFor(ElementLocatorFactorySelector.java:42)
-	at net.thucydides.core.webdriver.ElementLocatorFactorySelector.getLocatorFor(ElementLocatorFactorySelector.java:31)
+	at net.thucydides.core.webdriver.appium.AppiumConfiguration.getTargetPlatform(AppiumConfiguration.java:58)
+	at net.thucydides.core.webdriver.ElementLocatorFactorySelector.platformFor(ElementLocatorFactorySelector.java:51)
+	at net.thucydides.core.webdriver.ElementLocatorFactorySelector.getLocatorFor(ElementLocatorFactorySelector.java:41)
+	at net.thucydides.core.webdriver.ElementLocatorFactorySelector.getLocatorFor(ElementLocatorFactorySelector.java:30)
 	at net.thucydides.core.annotations.locators.SmartElementProxyCreator.proxyElements(SmartElementProxyCreator.java:21)
 	at net.thucydides.core.webdriver.DefaultPageObjectInitialiser.apply(DefaultPageObjectInitialiser.java:20)
 	at net.serenitybdd.core.pages.PageObject.setDriver(PageObject.java:166)
@@ -89,28 +89,28 @@
 	at net.serenitybdd.core.pages.PageObject.&lt;init&gt;(PageObject.java:155)
 	at net.serenitybdd.screenplay.abilities.BrowseTheWeb.&lt;init&gt;(BrowseTheWeb.java:32)
 	at net.serenitybdd.screenplay.abilities.BrowseTheWeb.with(BrowseTheWeb.java:48)
-	at net.serenitybdd.screenplay.actors.OnlineCast.actorNamed(OnlineCast.java:41)
+	at net.serenitybdd.screenplay.actors.OnlineCast.actorNamed(OnlineCast.java:43)
 	at net.serenitybdd.screenplay.actors.Stage.lambda$shineSpotlightOn$1(Stage.java:31)
 	at java.util.Optional.orElseGet(Optional.java:267)
 	at net.serenitybdd.screenplay.actors.Stage.shineSpotlightOn(Stage.java:31)
 	at net.serenitybdd.screenplay.actors.OnStage.theActorCalled(OnStage.java:76)
-	at co.com.saucelabs.stepdefinitions.BuyingProductsStepDefinition.thatSandraSignedInSwagLabsApp(BuyingProductsStepDefinition.java:27)
-	at ✽.that &quot;Sandra&quot; signed-in SwagLabs app(file:///C:/Users/hp/Documents/test-mobile-interview-saucedemo/src/test/resources/features/buying_products.feature:4)
-Caused by: net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate new WebDriver instance of type class io.appium.java_client.AppiumDriver (Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20090ms.
-Build info: version: '4.1.4', revision: '535d840ee2'
+	at co.com.saucelabs.stepdefinitions.BuyingProductsStepDefinition.thatSandraSignedInSwagLabsApp(BuyingProductsStepDefinition.java:31)
+	at ✽.that &quot;Sandra&quot; signed-in SwagLabs app(file:///C:/Users/hp/Documents/test-git/test-mobile-interview-saucedemo/src/test/resources/features/buying_products.feature:4)
+Caused by: net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate new WebDriver instance of type class io.appium.java_client.AppiumDriver (Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'DESKTOP-173RDAC', ip: '192.168.175.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[{appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:appPackage=com.swaglabsmobileapp, appium:autoGrantPermissions=true, appium:automationName=UiAutomator2, appium:captureScreenshots=true, appium:deviceName=R58RA3KF5FF, appium:deviceOrientation=portrait, appium:fullReset=false, appium:hub=http://127.0.0.1:4723/wd/hub, appium:noReset=true, platformName=Android, appium:platformVersion=12, appium:sessionName=Automation test session}], desiredCapabilities=Capabilities {appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, autoGrantPermissions: true, automationName: UiAutomator2, captureScreenshots: true, deviceName: R58RA3KF5FF, deviceOrientation: portrait, fullReset: false, hub: http://127.0.0.1:4723/wd/hub, noReset: true, platformName: Android, platformVersion: 12, sessionName: Automation test session}}]
+Command: [null, newSession {capabilities=[{appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:appPackage=com.swaglabsmobileapp, appium:autoGrantPermissions=true, appium:automationName=UiAutomator2, appium:captureScreenshots=true, appium:deviceName=R58RA3KF5FF, appium:deviceOrientation=portrait, appium:fullReset=false, appium:hub=http://127.0.0.1:4723/wd/hub, appium:noReset=true, platformName=ANDROID, appium:platformVersion=12, appium:sessionName=Automation test session}], desiredCapabilities=Capabilities {appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, autoGrantPermissions: true, automationName: UiAutomator2, captureScreenshots: true, deviceName: R58RA3KF5FF, deviceOrientation: portrait, fullReset: false, hub: http://127.0.0.1:4723/wd/hub, noReset: true, platformName: ANDROID, platformVersion: 12, sessionName: Automation test session}}]
 Capabilities {}). See below for more details.
-	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:146)
-	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:143)
-	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:134)
-	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:104)
+	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:150)
+	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:165)
+	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:156)
+	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:126)
 	at net.serenitybdd.core.webdriver.RemoteDriver.of(RemoteDriver.java:18)
-	at net.thucydides.core.webdriver.appium.AppiumConfiguration.getTargetPlatform(AppiumConfiguration.java:59)
-	at net.thucydides.core.webdriver.ElementLocatorFactorySelector.platformFor(ElementLocatorFactorySelector.java:52)
-	at net.thucydides.core.webdriver.ElementLocatorFactorySelector.getLocatorFor(ElementLocatorFactorySelector.java:42)
-	at net.thucydides.core.webdriver.ElementLocatorFactorySelector.getLocatorFor(ElementLocatorFactorySelector.java:31)
+	at net.thucydides.core.webdriver.appium.AppiumConfiguration.getTargetPlatform(AppiumConfiguration.java:58)
+	at net.thucydides.core.webdriver.ElementLocatorFactorySelector.platformFor(ElementLocatorFactorySelector.java:51)
+	at net.thucydides.core.webdriver.ElementLocatorFactorySelector.getLocatorFor(ElementLocatorFactorySelector.java:41)
+	at net.thucydides.core.webdriver.ElementLocatorFactorySelector.getLocatorFor(ElementLocatorFactorySelector.java:30)
 	at net.thucydides.core.annotations.locators.SmartElementProxyCreator.proxyElements(SmartElementProxyCreator.java:21)
 	at net.thucydides.core.webdriver.DefaultPageObjectInitialiser.apply(DefaultPageObjectInitialiser.java:20)
 	at net.serenitybdd.core.pages.PageObject.setDriver(PageObject.java:166)
@@ -118,12 +118,12 @@ Capabilities {}). See below for more details.
 	at net.serenitybdd.core.pages.PageObject.&lt;init&gt;(PageObject.java:155)
 	at net.serenitybdd.screenplay.abilities.BrowseTheWeb.&lt;init&gt;(BrowseTheWeb.java:32)
 	at net.serenitybdd.screenplay.abilities.BrowseTheWeb.with(BrowseTheWeb.java:48)
-	at net.serenitybdd.screenplay.actors.OnlineCast.actorNamed(OnlineCast.java:41)
+	at net.serenitybdd.screenplay.actors.OnlineCast.actorNamed(OnlineCast.java:43)
 	at net.serenitybdd.screenplay.actors.Stage.lambda$shineSpotlightOn$1(Stage.java:31)
 	at java.util.Optional.orElseGet(Optional.java:267)
 	at net.serenitybdd.screenplay.actors.Stage.shineSpotlightOn(Stage.java:31)
 	at net.serenitybdd.screenplay.actors.OnStage.theActorCalled(OnStage.java:76)
-	at co.com.saucelabs.stepdefinitions.BuyingProductsStepDefinition.thatSandraSignedInSwagLabsApp(BuyingProductsStepDefinition.java:27)
+	at co.com.saucelabs.stepdefinitions.BuyingProductsStepDefinition.thatSandraSignedInSwagLabsApp(BuyingProductsStepDefinition.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -135,15 +135,15 @@ Capabilities {}). See below for more details.
 	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
 	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
 	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
 	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
 	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
 	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
 	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
 	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
 	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
 	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
 	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
@@ -155,14 +155,14 @@ Capabilities {}). See below for more details.
 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
 	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
-	at io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:258)
-	at io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:58)
+	at io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)
+	at io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:59)
 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.junit.CucumberSerenityRunner$RunCucumber.evaluate(CucumberSerenityRunner.java:287)
+	at io.cucumber.junit.CucumberSerenityRunner$RunCucumber.evaluate(CucumberSerenityRunner.java:288)
 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
@@ -195,13 +195,13 @@ Capabilities {}). See below for more details.
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20090ms.
-Build info: version: '4.1.4', revision: '535d840ee2'
+Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'DESKTOP-173RDAC', ip: '192.168.175.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[{appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:appPackage=com.swaglabsmobileapp, appium:autoGrantPermissions=true, appium:automationName=UiAutomator2, appium:captureScreenshots=true, appium:deviceName=R58RA3KF5FF, appium:deviceOrientation=portrait, appium:fullReset=false, appium:hub=http://127.0.0.1:4723/wd/hub, appium:noReset=true, platformName=Android, appium:platformVersion=12, appium:sessionName=Automation test session}], desiredCapabilities=Capabilities {appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, autoGrantPermissions: true, automationName: UiAutomator2, captureScreenshots: true, deviceName: R58RA3KF5FF, deviceOrientation: portrait, fullReset: false, hub: http://127.0.0.1:4723/wd/hub, noReset: true, platformName: Android, platformVersion: 12, sessionName: Automation test session}}]
+Command: [null, newSession {capabilities=[{appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:appPackage=com.swaglabsmobileapp, appium:autoGrantPermissions=true, appium:automationName=UiAutomator2, appium:captureScreenshots=true, appium:deviceName=R58RA3KF5FF, appium:deviceOrientation=portrait, appium:fullReset=false, appium:hub=http://127.0.0.1:4723/wd/hub, appium:noReset=true, platformName=ANDROID, appium:platformVersion=12, appium:sessionName=Automation test session}], desiredCapabilities=Capabilities {appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, autoGrantPermissions: true, automationName: UiAutomator2, captureScreenshots: true, deviceName: R58RA3KF5FF, deviceOrientation: portrait, fullReset: false, hub: http://127.0.0.1:4723/wd/hub, noReset: true, platformName: ANDROID, platformVersion: 12, sessionName: Automation test session}}]
 Capabilities {}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -210,16 +210,16 @@ Capabilities {}
 	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
 	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:146)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:180)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:225)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:224)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:179)
 	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:79)
 	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:87)
 	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:116)
 	at net.serenitybdd.core.webdriver.driverproviders.AppiumDriverProvider.newDriverUsingExternalServer(AppiumDriverProvider.java:59)
 	at net.serenitybdd.core.webdriver.driverproviders.AppiumDriverProvider.newInstance(AppiumDriverProvider.java:47)
-	at net.thucydides.core.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:157)
-	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:136)
+	at net.thucydides.core.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:161)
+	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:140)
 	... 92 more
 </pre>
 </span>
@@ -237,7 +237,7 @@ Capabilities {}
 </thead>
 <tr>
 <td class="failures">Buying different products at SwagLabs</td>
-<td class="failures">28.131s</td>
+<td class="failures">8.505s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -250,7 +250,7 @@ Capabilities {}
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.7</a> at 13/08/2022 01:14:34 PM</p>
+<a href="http://www.gradle.org">Gradle 6.7</a> at 17/08/2022 12:19:54 PM</p>
 </div>
 </div>
 </body>

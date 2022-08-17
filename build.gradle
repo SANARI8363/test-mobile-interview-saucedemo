@@ -10,7 +10,6 @@ repositories {
     maven {
         url "https://plugins.gradle.org/m2/"
     }
-
 }
 
 apply plugin: 'java'
@@ -22,14 +21,11 @@ tasks.withType(JavaCompile) {
 
 
 ext {
-    serenityVersion = '3.2.5'
-    serenityCucumberVersion = '3.2.5'
+    serenityVersion = '3.3.0'
+    serenityCucumberVersion = '3.3.0'
 }
 
 dependencies {
-
-    //testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
-    //testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
 
     implementation "net.serenity-bdd:serenity-core:$rootProject.ext.serenityVersion"
     implementation "net.serenity-bdd:serenity-junit:$rootProject.ext.serenityVersion"
@@ -39,24 +35,19 @@ dependencies {
     implementation "net.serenity-bdd:serenity-screenplay-webdriver:$rootProject.ext.serenityVersion"
     implementation "net.serenity-bdd:serenity-ensure:$rootProject.ext.serenityVersion"
     implementation "net.serenity-bdd:serenity-reports:$rootProject.ext.serenityVersion"
-    implementation "io.appium:java-client:8.0.0"
+    implementation 'io.appium:java-client:8.1.1'
 
     implementation "net.serenity-bdd:serenity-ensure:$rootProject.ext.serenityVersion"
     implementation "net.serenity-bdd:serenity-reports:$rootProject.ext.serenityVersion"
-    implementation 'mysql:mysql-connector-java:8.0.17'
-    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    implementation 'mysql:mysql-connector-java:8.0.30'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.3.0'
     implementation 'com.github.javafaker:javafaker:1.0.2'
-    implementation 'org.json:json:20210307'
+    implementation 'org.json:json:20220320'
 
     testCompile "net.serenity-bdd:serenity-ensure:$rootProject.ext.serenityVersion"
     implementation "net.serenity-bdd:serenity-screenplay-webdriver:$rootProject.ext.serenityVersion"
 
-    implementation "co.com.devco.automation:automationDevcoLibrary:1.3.8"
-
-    //testImplementation 'junit:junit:4.12'
-    //testImplementation 'org.hamcrest:hamcrest-all:1.3'
-    //testImplementation 'org.assertj:assertj-core:1.7.0'
-
+   // implementation 'co.com.devco.automation:automationDevcoLibrary:2.0.2'
 }
 
 gradle.startParameter.continueOnFailure = true
@@ -65,5 +56,3 @@ tasks.withType(Test) {
     systemProperties = System.properties
     maxParallelForks = Runtime.runtime.availableProcessors()
 }
-
-
