@@ -151,7 +151,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 17-08-2022 12:06</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 17-08-2022 12:56</span>
     <br style="clear:left"/>
 </div>
 
@@ -210,7 +210,7 @@
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">No such session exception: A session is either terminated or not started</span>
+                    <span class="error-message error-message-title">Unsupported command exception: {'value':{'error':'unknown method','message':'Method is not implemented','stacktrace':'NotImplementedError: Method is not implemented\n    at AndroidUiautomator2Driver.execute (C:\\Program Files\\Appium Server GUI\\resources\\app\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\execute.js:14:11)\n    at commandExecutor (C:\\Program Files\\Appium Server GUI\\resources\\app\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\driver.js:335:9)\n    at C:\\Program Files\\Appium Server GUI\\resources\\app\\node_modules\\appium\\node_modules\\async-lock\\lib\\index.js:146:12\n    at AsyncLock._promiseTry (C:\\Program Files\\Appium Server GUI\\resources\\app\\node_modules\\appium\\node_modules\\async-lock\\lib\\index.js:280:31)\n    at exec (C:\\Program Files\\Appium Server GUI\\resources\\app\\node_modules\\appium\\node_modules\\async-lock\\lib\\index.js:145:9)\n    at AsyncLock.acquire (C:\\Program Files\\Appium Server GUI\\resources\\app\\node_modules\\appium\\node_modules\\async-lock\\lib\\index.js:162:3)\n    at AndroidUiautomator2Driver.executeCommand (C:\\Program Files\\Appium Server GUI\\resources\\app\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\driver.js:348:39)\n    at AppiumDriver.executeCommand (C:\\Program Files\\Appium Server GUI\\resources\\app\\node_modules\\appium\\lib\\appium.js:563:36)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at asyncHandler (C:\\Program Files\\Appium Server GUI\\resources\\app\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\protocol\\protocol.js:297:21)'}}</span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
@@ -226,11 +226,11 @@
         <div class="collapse multi-collapse" id="stacktraceModal-overall">
             <div class="card">
                 <div class="card-header">
-                    <h4>org.openqa.selenium.NoSuchSessionException </h4>
+                    <h4>org.openqa.selenium.UnsupportedCommandException </h4>
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:180)<br />co.com.saucelabs.tasks.AddProducts.lambda$performAs$0(AddProducts.java:31)<br />co.com.saucelabs.tasks.AddProducts.performAs(AddProducts.java:29)<br />co.com.saucelabs.stepdefinitions.BuyingProductsStepDefinition.hePutsInTheCartTheseProducts(BuyingProductsStepDefinition.java:36)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:57)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:84)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:75)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)<br />io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:59)<br /></pre>
+                        <pre>co.com.saucelabs.tasks.AddProducts.lambda$performAs$0(AddProducts.java:31)<br />co.com.saucelabs.tasks.AddProducts.performAs(AddProducts.java:29)<br />co.com.saucelabs.stepdefinitions.BuyingProductsStepDefinition.hePutsInTheCartTheseProducts(BuyingProductsStepDefinition.java:36)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:57)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:84)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:75)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)<br />io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:59)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
                     </div>
 
                 </div>
@@ -238,18 +238,24 @@
         </div>
     </div>
                 <div class="panel-body">
-                    <a href="#" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="pagesource5509100478971950945.html" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="9232292bcb9a9858d29bded41bc5252e3dd435e3c525f5e9d71b6360c6f306aa.png" title=" Given that &quot;Sandra&quot; signed-in SwagLabs app" width="720"/>
-                <img src="9232292bcb9a9858d29bded41bc5252e3dd435e3c525f5e9d71b6360c6f306aa.png" title=" Sandra login" width="720"/>
-                <img src="9232292bcb9a9858d29bded41bc5252e3dd435e3c525f5e9d71b6360c6f306aa.png" title=" Sandra enters 'standard_user' into Username Input" width="720"/>
-                <img src="f29409bd8ce581a8b7593a2877f0e46e9b948b7f86b6945bac1d89f5ce220543.png" title=" Sandra enters 'secret_sauce' into Password Input" width="720"/>
-                <img src="f29409bd8ce581a8b7593a2877f0e46e9b948b7f86b6945bac1d89f5ce220543.png" title=" Sandra clicks on Login Button" width="720"/>
-                <img src="aff95dfdd8c392182861e072e6ff3e1c1dc80b62fd2fc883ce9bb666b1c8d694.png" title=" Sandra login (completed)" width="720"/>
-                <img src="aff95dfdd8c392182861e072e6ff3e1c1dc80b62fd2fc883ce9bb666b1c8d694.png" title=" Given that &quot;Sandra&quot; signed-in SwagLabs app (completed): <span class='error-color'>ERROR</span>" width="720"/>
+                <img src="1f3afeba22e27e34e985d58aecb060a73091d26a25963ef08a7d23ea04ffdea6.png" title=" Given that &quot;Sandra&quot; signed-in SwagLabs app" width="720"/>
+                <img src="1f3afeba22e27e34e985d58aecb060a73091d26a25963ef08a7d23ea04ffdea6.png" title=" Sandra login" width="720"/>
+                <img src="1f3afeba22e27e34e985d58aecb060a73091d26a25963ef08a7d23ea04ffdea6.png" title=" Sandra enters 'standard_user' into Username Input" width="720"/>
+                <img src="20c59bf7776db4f3d43b281e418da55a1b4aa4fb2933d2a2342779061753eeac.png" title=" Sandra enters 'secret_sauce' into Password Input" width="720"/>
+                <img src="f3af9c1104d133a0df8cc103c473051379038f3c6edfeba97ef42bd2599ce659.png" title=" Sandra clicks on Login Button" width="720"/>
+                <img src="f3af9c1104d133a0df8cc103c473051379038f3c6edfeba97ef42bd2599ce659.png" title=" Sandra login (completed)" width="720"/>
+                <img src="c02108775c10ca78d469b6c6b8f227e1730688f9acbeb1d5bc6fc921edc5f4ad.png" title=" Given that &quot;Sandra&quot; signed-in SwagLabs app (completed)" width="720"/>
+                <img src="c02108775c10ca78d469b6c6b8f227e1730688f9acbeb1d5bc6fc921edc5f4ad.png" title=" When He puts in the cart these products
+| products |
+| Camisa Sauce Labs Bolt |
+| Luz de bicicleta Sauce Labs |
+| Chamarra Sauce Labs |" width="720"/>
+                <img src="c02108775c10ca78d469b6c6b8f227e1730688f9acbeb1d5bc6fc921edc5f4ad.png" title=" Sandra add products: <span class='error-color'>ERROR</span>" width="720"/>
             </div>
         </div>
 
