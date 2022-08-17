@@ -5,6 +5,7 @@ import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.actions.Click;
 
+import static co.com.saucelabs.userinterfaces.ProductPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class Open implements Interaction {

@@ -10,7 +10,7 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
 public class Select implements Interaction {
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Click.on(BTN_BACK_TO_HOME));
+       // actor.attemptsTo(Click.on(BTN_BACK_TO_HOME));
     }
 
     public static Performable shoppingCart(){

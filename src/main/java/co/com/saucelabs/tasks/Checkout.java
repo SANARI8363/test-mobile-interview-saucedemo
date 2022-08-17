@@ -1,17 +1,18 @@
 package co.com.saucelabs.tasks;
 
+import co.com.devco.automation.mobile.actions.Scroll;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.actions.Scroll;
 import net.serenitybdd.screenplay.actions.SendKeys;
 
 import static co.com.saucelabs.userinterfaces.CheckoutPage.*;
 import static co.com.saucelabs.userinterfaces.ProductPage.*;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
+
 
 public class Checkout implements Task {
     @Override
@@ -28,7 +29,7 @@ public class Checkout implements Task {
                 Click.on(BTN_FINISH));
     }
 
-    public static Performable checkout() {
+    public static Performable checkout() {        
         return instrumented(Checkout.class);
     }
 }

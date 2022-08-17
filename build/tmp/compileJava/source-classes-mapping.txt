@@ -1,4 +1,0 @@
-co/com/saucelabs/userinterfaces/LoginPage.java
- co.com.saucelabs.userinterfaces.LoginPage
-co/com/saucelabs/tasks/Login.java
- co.com.saucelabs.tasks.Login

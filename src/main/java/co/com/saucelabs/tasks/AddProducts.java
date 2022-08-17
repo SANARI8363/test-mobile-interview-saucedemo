@@ -1,19 +1,21 @@
 package co.com.saucelabs.tasks;
 
+import co.com.devco.automation.mobile.actions.Scroll;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
-import net.serenitybdd.screenplay.actions.Scroll;
 
 import java.util.List;
 import java.util.Map;
 import java.util.stream.IntStream;
 
 import static co.com.saucelabs.userinterfaces.ProductPage.*;
-import static co.com.saucelabs.userinterfaces.Home.*;
+import static co.com.saucelabs.userinterfaces.HomePage.*;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
+
+
 
 public class AddProducts implements Task {
 
