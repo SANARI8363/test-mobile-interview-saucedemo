@@ -32,18 +32,23 @@ public class BuyingProductsStepDefinition {
         theActorCalled(actor).attemptsTo(Login.atSwagLabs());
     }
 
-    @When("He puts in the cart these products")
+//    @When("He puts in the cart these products")
+//    public void actorPutShirtCart(List<Map<String, String>> products) {
+//        theActorInTheSpotlight().attemptsTo(AddProducts.toCart(products));
+//    }
+
+    @When("She puts in the cart one product")
     public void actorPutShirtCart() {
-        theActorInTheSpotlight().attemptsTo(new AddProduct());
+       theActorInTheSpotlight().attemptsTo(new AddProduct());
     }
 
-    @When("He does the checkout of his purchase")
-    public void heDoesTheCheckoutOfHisPurchase() {
+    @When("She does the checkout of his purchase")
+    public void SheDoesTheCheckoutOfHisPurchase() {
         theActorInTheSpotlight().attemptsTo(checkout());
     }
 
-    @Then("He should see the message {string}")
-    public void heShouldSeeTheMessage(String confirmationMessage) {
+    @Then("She should see the message {string}")
+    public void SheShouldSeeTheMessage(String confirmationMessage) {
         withCurrentActor(Ensure.that(LBL_CHECKOUT_COMPLETE).text().contains(confirmationMessage));
     }
 }

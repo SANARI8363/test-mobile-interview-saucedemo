@@ -1,4 +1,0 @@
-co/com/saucelabs/runners/BuyingProductsRunner.java
- co.com.saucelabs.runners.BuyingProductsRunner
-co/com/saucelabs/stepdefinitions/BuyingProductsStepDefinition.java
- co.com.saucelabs.stepdefinitions.BuyingProductsStepDefinition

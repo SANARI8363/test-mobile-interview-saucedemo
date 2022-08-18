@@ -34,12 +34,9 @@ public class AddProducts implements Task {
                         (product) ->
                                 actor.attemptsTo(
                                         WaitUntil.the(LBL_NAME_PRODUCT,isPresent()).forNoMoreThan(20).seconds(),
-                                        Scroll.to(LBL_NAME_PRODUCT),
-                                        Click.on(LBL_NAME_PRODUCT),
-
                                         //Scroll.to(LBL_NAME_PRODUCT.of(nameProduct.get(product).get("products"))),
-                                        //Click.on(LBL_NAME_PRODUCT.of(nameProduct.get(product).get("products"))),
-                                        Scroll.to(BTN_ADD_TO_CART),
+                                        Click.on(LBL_NAME_PRODUCT.of(nameProduct.get(product).get("products"))),
+                                        //Scroll.to(BTN_ADD_TO_CART),
                                         Click.on(BTN_ADD_TO_CART),
                                         Click.on(BTN_BACK_TO_HOME)));
     }

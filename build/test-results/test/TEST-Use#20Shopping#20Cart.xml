@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Use Shopping Cart" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-18T18:56:19" hostname="DESKTOP-173RDAC" time="41.455">
+<testsuite name="Use Shopping Cart" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-18T20:14:01" hostname="DESKTOP-173RDAC" time="52.605">
   <properties/>
-  <testcase name="Buying different products at SwagLabs" classname="Use Shopping Cart" time="41.455"/>
+  <testcase name="Buying any product at SwagLabs" classname="Use Shopping Cart" time="52.605"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
