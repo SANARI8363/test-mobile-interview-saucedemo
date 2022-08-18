@@ -1,6 +1,7 @@
 package co.com.saucelabs.stepdefinitions;
 
 
+import co.com.saucelabs.tasks.AddProduct;
 import co.com.saucelabs.tasks.AddProducts;
 import co.com.saucelabs.tasks.Login;
 import io.cucumber.java.Before;
@@ -32,8 +33,8 @@ public class BuyingProductsStepDefinition {
     }
 
     @When("He puts in the cart these products")
-    public void hePutsInTheCartTheseProducts(List<Map<String, String>> products) {
-        theActorInTheSpotlight().attemptsTo(AddProducts.toCart(products));
+    public void actorPutShirtCart() {
+        theActorInTheSpotlight().attemptsTo(new AddProduct());
     }
 
     @When("He does the checkout of his purchase")
